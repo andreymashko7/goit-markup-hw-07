@@ -1,0 +1,39 @@
+body {
+  padding: 25px;
+  margin: 0;
+}
+
+.option {
+  display: block;
+  margin-bottom: 0.25em;
+}
+
+.check {
+  padding-left: 1.2em;
+}
+
+.check-input {
+  position: absolute;
+  -webkit-appearance: none;
+}
+
+.checkbox {
+  margin-left: -1.2em;
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  background-image: url(../images/vector2.svg);
+  border: 1px solid tomato;
+}
+
+.check-input:checked + .checkbox {
+  background-color: blue;
+}
+
+.check-input:focus + .checkbox {
+  background-image: url(../images/vector2-focused.svg);
+}
+
+.check-input:focus + .checkbox {
+  background-image: url(../images/vector2-focused.svg);
+}
