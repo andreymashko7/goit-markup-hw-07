@@ -1,0 +1,188 @@
+// Футер
+footer {
+  color: var(--primary-white-color);
+  background-color: #2f303a;
+}
+
+// Логотип
+
+.logo-footer {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: var(--primary-white-color);
+  text-decoration: none;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.logo-footer > span {
+  color: var(--accent-color);
+}
+
+// Адрес-футер
+
+.link-social {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  justify-content: center;
+  align-items: center;
+  fill: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-social:hover,
+.link-social:focus {
+  background-color: var(--accent-color);
+}
+
+.contacts .contacts-link,
+.contacts .tell-link {
+  display: inline-block;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-link.footer {
+  margin-bottom: 9px;
+}
+
+.contacts-link:hover,
+.contacts-link:focus,
+.contacts .tell-link:hover,
+.contacts .tell-link:focus {
+  color: var(--accent-color);
+}
+
+.box-footer {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-top: 48px;
+  padding-bottom: 28px;
+}
+
+.contacts .contacts-text {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 9px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+// Соцсети-футера
+
+.social.list {
+  display: flex;
+}
+
+.social .item {
+  margin-right: 10px;
+}
+.social .item:last-child {
+  margin-right: 0px;
+}
+
+// подписка
+
+.button-text {
+  margin-bottom: 21px;
+}
+
+.footer-text {
+  display: block;
+  margin-bottom: 21px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.button-text {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.footer-input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  padding: 15px 0px 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background: #2f303a;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-input:focus {
+  color: var(--primary-white-color);
+}
+
+.footer-flex {
+  display: inline-flex;
+}
+
+// кнопка подписаться
+
+.button-second {
+  display: flex;
+  font-family: inherit;
+  min-width: 200px;
+  border-radius: 4px;
+  padding: 10px 29px;
+  border: 0;
+
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button-second:hover,
+.button-second:focus {
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  color: var(--accent-color);
+  background-color: var(--primary-white-color);
+}
+.button-second:hover .air-icon,
+.button-second:focus .air-icon {
+  fill: var(--accent-color);
+}
+
+.air-icon {
+  margin-left: 10px;
+  fill: var(--primary-white-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

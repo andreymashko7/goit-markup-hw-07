@@ -2,7 +2,7 @@
 /* вспомогательный цвет #757575 */
 /* белый #FFFFFF */
 /* акцент #2196F3 */
-:root {
+/* :root {
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
@@ -17,7 +17,7 @@ body {
 }
 /* утилиты */
 
-.container {
+/* .container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -44,11 +44,11 @@ body {
 
 .img {
   display: block;
-}
+} */
 
 /* логотип компании */
 
-.logo {
+/* .logo {
   color: #000000;
   text-decoration: none;
   font-family: Raleway;
@@ -59,11 +59,11 @@ body {
 
 .logo > span {
   color: var(--accent-color);
-}
+} */
 
 /* Навигация */
 
-.page-header,
+/* .page-header,
 .main-nav {
   display: flex;
   align-items: center;
@@ -90,22 +90,6 @@ body {
   margin-right: 0;
 }
 
-.icon-mail {
-  width: 16px;
-  height: 11px;
-  margin-right: 10px;
-  fill: currentColor;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.icon-mobile {
-  width: 10px;
-  height: 15px;
-  margin-right: 10px;
-  fill: currentColor;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .site-nav .link {
   display: block;
   padding-top: 32px;
@@ -121,9 +105,9 @@ body {
 
 .site-nav .link.current {
   color: var(--accent-color);
-}
+} */
 
-.icon-mobile:hover,
+/* .icon-mobile:hover,
 .icon-mobile:focus,
 .icon-mail:hover,
 .icon-mail:focus,
@@ -134,6 +118,22 @@ body {
   color: var(--accent-color);
   fill: var(--accent-color);
   cursor: pointer;
+} */
+
+/* .icon-mail {
+  width: 16px;
+  height: 11px;
+  margin-right: 10px;
+  fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-mobile {
+  width: 10px;
+  height: 15px;
+  margin-right: 10px;
+  fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .auth-nav .item + .item {
@@ -150,9 +150,9 @@ body {
   display: inline-flex;
   align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-.link.current {
+/* .link.current {
   position: relative;
 }
 
@@ -166,11 +166,11 @@ body {
   width: 100%;
   background-color: var(--accent-color);
   border-radius: 2px;
-}
+} */
 
 /* hero */
 
-.hero {
+/* .hero {
   height: 600px;
   max-width: 1600px;
   margin-left: auto;
@@ -233,9 +233,9 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-.backdrop {
+/* .backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -469,11 +469,11 @@ textarea {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
   color: var(--accent-color);
   background-color: var(--primary-white-color);
-}
+} */
 
 /* section  преимущества*/
 
-.section {
+/* .section {
   padding-top: 94px;
   padding-bottom: 94px;
   border-bottom: 1px solid #ececec;
@@ -522,7 +522,7 @@ textarea {
 
 /* чем мы занимаемся (карточки товара) */
 
-.exampls .item {
+/* .exampls .item {
   margin-right: 30px;
 }
 
@@ -567,11 +567,11 @@ textarea {
   line-height: 1.14;
   text-align: center;
   text-transform: uppercase;
-}
+} */
 
 /* Наша команда (карточки работников) */
 
-.list.workers {
+/* .list.workers {
   display: flex;
   text-align: center;
 }
@@ -641,11 +641,11 @@ textarea {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
-}
+} */
 
 /* Наши клиенты */
 
-.clients {
+/* .clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -689,11 +689,11 @@ textarea {
   fill: var(--accent-color);
   border-color: var(--accent-color);
   cursor: pointer;
-}
+} */
 
 /* футер */
 
-footer {
+/* footer {
   color: var(--primary-white-color);
   background-color: #2f303a;
 }
@@ -869,27 +869,13 @@ footer {
   fill: var(--primary-white-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.container.copyright {
-  margin-bottom: 0;
-  margin-top: 0;
-  padding-top: 28px;
-  padding-bottom: 21px;
-
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  color: rgba(255, 255, 255, 0.4);
-
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 2;
-  text-align: center;
-}
+*/
 
 /* Страничка портфолио!!!! */
 
 /* Кнопки */
 
-.list.filtr {
+/* .list.filtr {
   display: flex;
   justify-content: center;
 }
@@ -928,11 +914,11 @@ footer {
 .main-page .btn-type:focus {
   color: var(--primary-white-color);
   background: var(--accent-color);
-}
+} */
 
 /* Карточки товаров */
 
-.card-content {
+/* .card-content {
   padding: 20px 23px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
@@ -1021,4 +1007,4 @@ footer {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-}
+} */

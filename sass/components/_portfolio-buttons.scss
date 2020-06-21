@@ -1,0 +1,42 @@
+// кнопки в портфолио
+
+.list.filtr {
+  display: flex;
+  justify-content: center;
+}
+
+.filtr .item {
+  margin-right: 8px;
+}
+.filtr .item:last-child {
+  margin-right: 0;
+}
+.container.menu {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.main-page {
+  border-top: 94px;
+  border: 1px solid #ececec;
+}
+
+.main-page .btn-type {
+  text-align: center;
+  padding: 6px 22px;
+  border: none;
+  border-radius: 4px;
+  color: var(--primary-text-color);
+  background-color: #f5f4fa;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main-page .btn-type:hover,
+.main-page .btn-type:focus {
+  color: var(--primary-white-color);
+  background: var(--accent-color);
+}
