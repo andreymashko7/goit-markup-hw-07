@@ -1,19 +1,41 @@
 // Наша команда (карточки работников)
 
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background: #f5f4fa;
+
+  & .team-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+  }
+}
+
 .list.workers {
   display: flex;
   text-align: center;
+
+  .card-shadow {
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 1px 3px rgba(0, 0, 0, 0.12);
+  }
 }
 
 .link-social.person {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.link-social.person:hover,
-.link-social.person:focus {
-  fill: $primary-white-color;
+  &:hover,
+  &:focus {
+    fill: $primary-white-color;
+  }
 }
 
 .person-box {
@@ -23,51 +45,14 @@
 .team .item {
   margin-right: 30px;
   overflow: hidden;
-}
 
-.team .item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .list .social {
   display: flex;
   margin-bottom: 0;
   justify-content: center;
-}
-
-.team {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  background: #f5f4fa;
-}
-
-.card-shadow {
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-}
-
-.team .team-title {
-  margin-top: 0;
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-}
-.team .team-name {
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-}
-
-.team .team-work {
-  margin-top: 0;
-  margin-bottom: 16px;
-  color: $secondary-text-color;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
 }

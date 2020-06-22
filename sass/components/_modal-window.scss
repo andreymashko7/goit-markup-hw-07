@@ -104,6 +104,10 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
+
+  .modal-field:focus-within > & {
+    border-color: $accent-color;
+  }
 }
 
 .modal-icon {
@@ -111,6 +115,10 @@
   top: 50%;
   transform: translateY(-50%);
   left: 18px;
+
+  .modal-field:focus-within & {
+    fill: $accent-color;
+  }
 }
 
 .modal-label {
@@ -128,39 +136,18 @@
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .modal-field:focus-within &,
+  .modal-input:not(:placeholder-shown) + & {
+    color: $accent-color;
+    transform: translate(-25px, -42px);
+  }
 }
 
 .modal-field {
   display: block;
   position: relative;
   margin-bottom: 28px;
-}
-
-.modal-field:focus-within > .modal-icon {
-  fill: $accent-color;
-}
-
-.modal-field:focus-within > .modal-label {
-  color: $accent-color;
-  transform: translate(-25px, -42px);
-}
-
-.modal-field:focus-within > .modal-input,
-.modal-field:focus-within > textarea {
-  border-color: $accent-color;
-}
-
-.modal-input:not(:placeholder-shown) + .modal-label {
-  transform: translate(-25px, -42px);
-}
-
-.modal-field:focus-within > .label-textarea {
-  transform: translateY(-33px);
-  color: $accent-color;
-}
-
-.modal-textarea:not(:placeholder-shown) + .label-textarea {
-  transform: translateY(-33px);
 }
 
 // коментарии формы модального окна
@@ -177,6 +164,10 @@ textarea {
   resize: none;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+
+  .modal-field:focus-within & {
+    border-color: $accent-color;
+  }
 }
 
 .label-textarea {
@@ -194,6 +185,12 @@ textarea {
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .modal-field:focus-within > &,
+  .modal-textarea:not(:placeholder-shown) + & {
+    transform: translateY(-33px);
+    color: $accent-color;
+  }
 }
 
 // Правило для чекбокса
@@ -238,15 +235,15 @@ textarea {
   border-radius: 4px;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
-}
 
-.checkbox-input:checked + .checkbox-icon {
-  border-color: $accent-color;
-  background: $accent-color;
+  .checkbox-input:checked + & {
+    border-color: $accent-color;
+    background: $accent-color;
 
-  background-image: url('../images/vector2.svg');
-  background-size: contain;
-  background-origin: border-box;
+    background-image: url('../images/vector2.svg');
+    background-size: contain;
+    background-origin: border-box;
+  }
 }
 
 .policy {
@@ -273,12 +270,12 @@ textarea {
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
-}
 
-.modal-button:hover,
-.modal-button:focus {
-  color: $accent-color;
-  background-color: $primary-white-color;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    background-color: $primary-white-color;
 
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  }
 }
