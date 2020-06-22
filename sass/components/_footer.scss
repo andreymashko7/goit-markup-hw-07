@@ -1,6 +1,6 @@
 // Футер
 footer {
-  color: var(--primary-white-color);
+  color: $primary-white-color;
   background-color: #2f303a;
 }
 
@@ -9,7 +9,7 @@ footer {
 .logo-footer {
   display: inline-block;
   margin-bottom: 10px;
-  color: var(--primary-white-color);
+  color: $primary-white-color;
   text-decoration: none;
   font-family: Raleway;
   font-weight: 700;
@@ -18,7 +18,7 @@ footer {
 }
 
 .logo-footer > span {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 // Адрес-футер
@@ -31,13 +31,13 @@ footer {
   background-color: rgba(255, 255, 255, 0.1);
   justify-content: center;
   align-items: center;
-  fill: #ffffff;
+  fill: $primary-white-color;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-social:hover,
 .link-social:focus {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
 }
 
 .contacts .contacts-link,
@@ -62,7 +62,7 @@ footer {
 .contacts-link:focus,
 .contacts .tell-link:hover,
 .contacts .tell-link:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .box-footer {
@@ -137,7 +137,7 @@ footer {
 }
 
 .footer-input:focus {
-  color: var(--primary-white-color);
+  color: $primary-white-color;
 }
 
 .footer-flex {
@@ -154,8 +154,8 @@ footer {
   padding: 10px 29px;
   border: 0;
 
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
+  color: $primary-white-color;
+  background-color: $accent-color;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -173,16 +173,16 @@ footer {
 .button-second:hover,
 .button-second:focus {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-  color: var(--accent-color);
-  background-color: var(--primary-white-color);
+  color: $accent-color;
+  background-color: $primary-white-color;
 }
 .button-second:hover .air-icon,
 .button-second:focus .air-icon {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 
 .air-icon {
   margin-left: 10px;
-  fill: var(--primary-white-color);
+  fill: $primary-white-color;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

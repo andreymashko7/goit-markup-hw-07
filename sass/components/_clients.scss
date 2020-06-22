@@ -41,7 +41,7 @@
 
 .company-logo:hover,
 .company-logo:focus {
-  fill: var(--accent-color);
-  border-color: var(--accent-color);
+  fill: $accent-color;
+  border-color: $accent-color;
   cursor: pointer;
 }
