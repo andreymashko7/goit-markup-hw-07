@@ -40,7 +40,7 @@
   opacity: 0;
   pointer-events: none;
 
-  &.modal {
+  & .modal {
     transform: translate(-50%, -50%) scale(1.1);
   }
 }
@@ -84,7 +84,7 @@
   color: $primary-text-color;
 
   text-align: center;
-  font-weight: bold;
+  font-weight: $secondary-font-weight;
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: 0.02em;
@@ -129,7 +129,7 @@
 
   color: #757575;
 
-  font-weight: normal;
+  font-weight: $primary-font-weight;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
@@ -178,7 +178,7 @@ textarea {
 
   color: $secondary-text-color;
 
-  font-weight: normal;
+  font-weight: $primary-font-weight;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
@@ -260,7 +260,7 @@ textarea {
   color: $primary-white-color;
   background-color: $accent-color;
 
-  font-weight: bold;
+  font-weight: $secondary-font-weight;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
